@@ -107,7 +107,8 @@ package: # Optional deployment packaging configuration
   excludeDevDependencies: false # Config if Serverless should automatically exclude dev dependencies in the deployment package. Defaults to true
   artifact: path/to/my-artifact.zip # Own package that should be used. You must provide this file.
   individually: true # Enables individual packaging for each function. If true you must provide package for each function. Defaults to false
-
+plugins:
+  - serverless-plugin-simulate
 
 functions:
   usersCreate: # A Function
